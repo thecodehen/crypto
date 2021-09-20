@@ -140,7 +140,7 @@ It turns out that CPA security is _strictly stronger_, in the sense that without
 There is no CPA secure $(E,D)$ where $E$ is _deterministic_.
 
 > # {.proof data-ref="CPAsecrandomthm"}
-The proof is very simple: Eve will only use a single round of interacting with $E$ where she will ask for the encryption $c_1$ of $0^\ell$. In the second round, Eve will choose $m_0=0^{\ell}$ and $m_1=1^{\ell}$, and get $c^*=E_k(m_b)$ she wil then output $0$ if and only if $c^*=c_1$.
+The proof is very simple: Eve will only use a single round of interacting with $E$ where she will ask for the encryption $c_1$ of $0^\ell$. In the second round, Eve will choose $m_0=0^{\ell}$ and $m_1=1^{\ell}$, and get $c^*=E_k(m_b)$. She will then output $0$ if and only if $c^*=c_1$.
 
 
 ![Insecurity of deterministic encryption](../figure/code_talkers.png){#xkcdnavajotwofig  .margin }
